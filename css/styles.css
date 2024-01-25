@@ -1,0 +1,495 @@
+/*CSS STYLES*/
+body{
+    margin: 0;
+    font-family: "Arial";
+    overflow: auto;
+}
+
+/* ADD HEADER STYLES AND FIT CONTENT */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #f00444;
+    height: 70px;
+    width: 1500px;
+    align-items: center;
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    z-index: 1;
+}
+
+/* ADD BOLD AT HEADER'S <P> */
+.logo p{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.navButtons a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;  
+    font-size: 1.2em;
+}
+
+section{
+    background-image: url(../images/home-bg.jpg);
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 390px;
+    padding-left: 8%;
+    padding-top: 15%;
+    min-width: 200px;
+}   
+
+p{
+    display: inline;
+}
+
+.weddingPlanner{
+    font-size: 2em;
+}
+
+.bigLetters{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.mini3{
+    margin-top: 1%;
+}
+
+.learnMore{
+    border: solid;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    padding-right: 2%;
+    padding-left: 2%;
+    text-decoration: none;
+    color: black;
+    border-color: black;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.learnMore:hover{
+    background-color: #f00444;
+    border-color: #f00444;
+    color: white;
+}
+
+.bigBox{
+    background-color: rgb(1, 1, 67);
+}
+
+.box1{
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-evenly;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.miniBox{
+    min-height: 235px;
+    width: 27%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    min-width: 300px;
+}
+
+.number{
+    font-size: 4em;
+    font-weight: bold;
+    color: #f00444;
+}
+
+.letrasAzules{
+    color: rgb(0, 0, 84);
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.letritas{
+    color: gray;
+}
+
+.learnMore2:hover{
+    background-color: #f00444;
+    border-color: #f00444;
+    color: white;
+}
+
+.button{
+    margin-top: 8%;
+}
+
+.learnMore2{
+    border: solid;
+    padding-bottom:2%;
+    padding-top: 2%;
+    text-decoration: none;
+    color: black;
+    border-color: black;
+    padding-right: 8%;
+    padding-left: 8%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.box2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.imgHeader{
+    margin-top: 1%;
+    width: 11%;
+    padding-left: 45%;
+}
+
+.box4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(120px,auto);
+    gap: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.imagenesGrid{
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.element1{
+    grid-template-areas: 1/1/2/2;
+    background-image: url("../images/img1.jpg");
+    background-size: cover;
+    height: 220px;
+    padding-top: 10%;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.element2{
+    grid-template-areas: 1/2/2/3;
+    background-image: url("../images/img2.jpg");
+    background-size: cover;
+    padding-top: 10%;
+    height: 220px;
+}
+.element3{
+    grid-template-areas: 1/3/2/4;
+    background-image: url("../images/img3.jpg");   
+    background-size: cover;
+    padding-top: 10%;
+    height: 220px;
+}
+.element4{
+    grid-template-areas: 2/1/3/2;
+    background-image: url("../images/img4.jpg");
+    background-size: cover;
+    padding-top: 10%;
+    height: 220px;
+}
+
+.element5{
+    grid-template-areas: 2/2/3/3;
+    background-image: url("../images/img5.jpg");
+    background-size: cover;
+    padding-top: 10%;
+    height: 220px;
+}
+
+.element6{
+    grid-template-areas: 2/3/3/4;
+    background-image: url("../images/img6.jpg");  
+    background-size: cover;
+    padding-top: 10%;
+    height: 220px;
+}
+
+.element1, .element2, .element3, .element4, .element5, .element6{
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.element1:hover .texto{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+.element2:hover .texto{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+.element3:hover .texto{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+.element4:hover .texto{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+.element5:hover .texto{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+.element6:hover .texto{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+}
+
+.learnMore3{
+    border: solid;
+    padding-bottom:2%;
+    width: 30%;
+    text-decoration: none;
+    color: black;
+    border-color: black;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-left: 4%;
+    transition: background-color 0.3s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.learnMore3:hover{   
+    color: white;
+    background-color: #f00444;
+    border-color: #f00444;
+}
+
+.blueLetters{
+    color: rgb(0, 0, 84);
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.box5{
+    color: white;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.box6{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+}
+
+.miniContainer{
+    border: solid;
+    height: 280px;
+    background-color: white;
+    padding: 4% 4%;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+.couple{
+    width: 100%;
+    height: 100%;
+}
+
+.desc{
+    color: white;
+    
+}
+
+.text{
+    color: rgba(216, 216, 216, 0.479);
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.caja2{
+    height: 990px;
+    width: 200px;
+    padding-top: 2.5%;
+}
+
+.divider{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.caja3{
+    padding-top: 2%;
+}
+
+.box7{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.box8{
+    background-color:rgb(1, 1, 67);
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    align-items: center;
+}
+
+form{
+    width: 100%;
+    background-color: white;
+    padding-top: 3%;
+    padding-right: 1%;
+    padding-left: 2.5%;
+    margin-bottom: 2%;
+    border: solid;
+    border-radius: 5px;
+}
+
+.name, .correo, .phone, .direction{
+    width: 47%;
+    height: 40px;
+    margin-bottom: 2%;
+    padding-left: 1%;
+    border: 2px solid #dedede;
+    font-size: 1em;
+    outline-style: none;
+}
+.name, .phone{
+    margin-right: 1%;
+}
+
+.dedication{
+    width: 97.5%;
+    height: 120px;
+    font-size: 1em;
+    text-indent: 5px;
+    border: 2px solid #dedede;
+    outline-style: none;
+}
+
+.message{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 43%;
+    border: solid;
+    width: 100px;
+    height: 10px;
+    text-decoration: none;
+    color: black;
+    border-color: black;
+    padding: 1% 2%;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.message:hover{
+    color: white;
+    background-color: #f00444;
+    border-color: #f00444;
+}
+
+footer{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    padding-top: 0.5%;
+}
+
+.rojito{
+    color: red;
+}
+
+@media screen and (min-width: 481px) and (max-width:767px){
+    section{
+        background-size:contain;
+        background-repeat: repeat;
+    }
+
+    .box1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miniBox{
+        margin-bottom: 2%;
+    }
+
+    .box4{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: minmax(150px, auto);
+        justify-content: center;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .element1{
+        grid-area: 1/1/2/2;
+    }
+
+    .element2{
+        grid-area: 1/2/2/3;
+    }
+
+    .element3{
+        grid-area: 2/1/3/2;
+    }
+
+    .element4{
+        grid-area: 2/2/3/3;
+    }
+    .element5{
+        grid-area: 3/1/4/2;
+    }
+    .element6{
+        grid-area: 3/2/4/3;
+    }
+
+    .element1, .element2, .element3, .element4, .element5, .element6{
+        background-size: cover;
+    }
+
+    .box5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form{
+        min-width: 600px
+    }
+}
